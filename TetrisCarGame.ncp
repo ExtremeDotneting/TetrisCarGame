@@ -1,0 +1,162 @@
+<Project>
+  <Name>TetrisCarGame</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Console</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>GameEngine</Name>
+        <Access>Public</Access>
+        <Location left="513" top="541" />
+        <Size width="162" height="259" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">List&lt;EngineModel&gt; engineModelsList</Member>
+        <Member type="Field">double speedModificator</Member>
+        <Member type="Field">int width</Member>
+        <Member type="Field">int heigh</Member>
+        <Member type="Method">public void AddEngineModel(EngineModel engineModel)</Member>
+        <Member type="Method">public void NextTick()</Member>
+        <Member type="Method">public char[,] GetRenderBuf()</Member>
+        <Member type="Method">void CalcColisions()</Member>
+        <Member type="Method">void DrawSymbol(char ch)</Member>
+        <Member type="Method">public void DrawEngineModel(EngineModel engineModel)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EngineModel</Name>
+        <Access>Public</Access>
+        <Location left="763" top="541" />
+        <Size width="273" height="360" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">bool[,] fixture</Member>
+        <Member type="Field">char[,] texture</Member>
+        <Member type="Field">double x</Member>
+        <Member type="Field">double y</Member>
+        <Member type="Field">Acceleration acceleration</Member>
+        <Member type="Method">public void SetPosition(float x, float y)</Member>
+        <Member type="Method">public float GetX()</Member>
+        <Member type="Method">public float GetY()</Member>
+        <Member type="Method">public Acceleration GetAcceleration()</Member>
+        <Member type="Method">public void SetAcceleration(Acceleration acceleration)</Member>
+        <Member type="Method">public void OnColision(EngineModel colisionWith)</Member>
+        <Member type="Method">public bool IsDisposed()</Member>
+        <Member type="Method">public void Dispose()</Member>
+        <Member type="Method">public bool[,] GetFixture()</Member>
+        <Member type="Method">public char[,] GetTexture()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Structure">
+        <Name>Acceleration</Name>
+        <Access>Public</Access>
+        <Location left="1105" top="541" />
+        <Size width="162" height="127" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">double Speed</Member>
+        <Member type="Field">MoveDirection moveDirection</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>BotCar</Name>
+        <Access>Public</Access>
+        <Location left="1017" top="974" />
+        <Size width="162" height="112" />
+        <Collapsed>False</Collapsed>
+        <Member type="Constructor">public BotCar()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PlayerCar</Name>
+        <Access>Public</Access>
+        <Location left="676" top="974" />
+        <Size width="162" height="124" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void ActivateControle()</Member>
+        <Member type="Method">public void Move(MoveDirection moveDirection)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GameLogic</Name>
+        <Access>Public</Access>
+        <Location left="658" top="306" />
+        <Size width="162" height="165" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void StartGame()</Member>
+        <Member type="Method">void OnGameFinish(bool win)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>720</X>
+          <Y>605</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>738</X>
+          <Y>605</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="1" second="2">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+      <Relationship type="Generalization" first="3" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>994</X>
+          <Y>926</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>725</X>
+          <Y>949</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>844</X>
+          <Y>926</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="5" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>688</X>
+          <Y>496</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="5" second="1">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>786</X>
+          <Y>496</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>901</X>
+          <Y>515</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
