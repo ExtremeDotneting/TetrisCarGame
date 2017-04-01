@@ -10,7 +10,7 @@
 
 
 <br />Contacts:
-<br />	Vk - https://vk.com/yura_mysko
-<br />	Youtube - https://www.youtube.com/channel/UCiIj3Q0z1pNJ2KyNRcspoZw
-<br />	Habrahabr blog - https://habrahabr.ru/users/kogercoder/
-<br />	Telegram - https://t.me/yura_mysko
+<br /><space><space>Vk - https://vk.com/yura_mysko
+<br /><space><space>Youtube - https://www.youtube.com/channel/UCiIj3Q0z1pNJ2KyNRcspoZw
+<br /><space><space>Habrahabr blog - https://habrahabr.ru/users/kogercoder/
+<br /><space><space>Telegram - https://t.me/yura_mysko
