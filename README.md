@@ -10,7 +10,7 @@ Uml class diagram:
 
 
 Contacts:
-  Vk - [a link](https://vk.com/yura_mysko)
+  Vk - https://vk.com/yura_mysko
   Youtube - [a link](https://www.youtube.com/channel/UCiIj3Q0z1pNJ2KyNRcspoZw)
   Habrahabr blog - [a link](https://habrahabr.ru/users/kogercoder/)
   Telegram - [a link](https://t.me/yura_mysko)
