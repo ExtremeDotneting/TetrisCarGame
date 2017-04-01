@@ -1,16 +1,16 @@
 # TetrisCarGame
-There are console version of tetris car game in this repositiry.
-In this project i wrote simple console engine with rendering and collisions handling.
+<br />There are console version of tetris car game in this repositiry.
+<br />In this project i wrote simple console engine with rendering and collisions handling.
 
-Work demo:
+<br />Work demo:
 ![alt tag](demo.gif)
 
-Uml class diagram:
+<br />Uml class diagram:
 ![alt tag](uml2.png)
 
 
-Contacts:
-  Vk - https://vk.com/yura_mysko
-  Youtube - [a link](https://www.youtube.com/channel/UCiIj3Q0z1pNJ2KyNRcspoZw)
-  Habrahabr blog - [a link](https://habrahabr.ru/users/kogercoder/)
-  Telegram - [a link](https://t.me/yura_mysko)
+<br />Contacts:
+<br />	Vk - https://vk.com/yura_mysko
+<br />	Youtube - https://www.youtube.com/channel/UCiIj3Q0z1pNJ2KyNRcspoZw
+<br />	Habrahabr blog - https://habrahabr.ru/users/kogercoder/
+<br />	Telegram - https://t.me/yura_mysko
